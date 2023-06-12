@@ -3,7 +3,7 @@
  include_once('config.php');
   $sql = "SELECT * FROM users ORDER BY id DESC";
   $result = $conexao->query($sql);
-  print_r($result)
+ // print_r($result)
 ?>
 
 <!DOCTYPE html>
