@@ -22,7 +22,7 @@
                 $horario_inicio = $user_data ['horario_inicio'];
                 $horario_fim = $user_data ['horario_fim'];
             }
-            print_r($nome);
+           // print_r($nome);
         }
                 
         else
@@ -163,10 +163,10 @@
                 <br>
                  <!-- Labs-->
                 <p>Laboratórios:</p>
-                <input type="radio" id="lab1" name="genero" value="lab1" <?php echo ($laboratorio == 'lab1') ? 'checked' : '' ?> required>
+                <input type="radio" id="lab1" name="laboratorio" value="lab1" <?php echo ($laboratorio == 'lab1') ? 'checked' : '' ?> required>
                 <label for="lab1">Laboratório 1</label>
                 <br>
-                <input type="radio" id="lab2" name="genero" value="lab2" <?php echo ($laboratorio == 'lab2' )? 'checked' : '' ?> required>
+                <input type="radio" id="lab2" name="laboratorio" value="lab2" <?php echo ($laboratorio == 'lab2' )? 'checked' : '' ?> required>
                 <label for="lab2">Laboratório 2</label>
                 <br>
                  <!--
