@@ -8,7 +8,7 @@
         $nome = $_POST ['nome'];
         $email = $_POST ['email'];
         $tel = $_POST ['telefone'];
-        $laboratorio = $_POST['genero'];
+        $laboratorio = $_POST['laboratorio'];
         $data_reserva = $_POST ['data_reserva'];
         $horario_inicio = $_POST ['horario_inicio'];
         $horario_fim = $_POST ['horario_fim'];
@@ -20,7 +20,7 @@
 
    $result = $conexao->query($sql);
 
-   print_r($result);
+   //print_r($result);
 }
 ?>
 
@@ -152,10 +152,10 @@
                 <br>
                  <!-- Labs-->
                 <p>Laboratórios:</p>
-                <input type="radio" id="lab1" name="genero" value="lab1" required>
+                <input type="radio" id="lab1" name="laboratorio" value="lab1" required>
                 <label for="lab1">Laboratório 1</label>
                 <br>
-                <input type="radio" id="lab2" name="genero" value="lab2" required>
+                <input type="radio" id="lab2" name="laboratorio" value="lab2" required>
                 <label for="lab2">Laboratório 2</label>
                 <br>
                  <!--
