@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `cadastro-mtvx` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_vi_0900_as_cs */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `cadastro-mtvx` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `cadastro-mtvx`;
 -- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
 --
@@ -26,15 +26,15 @@ DROP TABLE IF EXISTS `users`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) COLLATE utf8mb4_vi_0900_as_cs NOT NULL,
-  `email` varchar(45) COLLATE utf8mb4_vi_0900_as_cs NOT NULL,
-  `tel` varchar(45) COLLATE utf8mb4_vi_0900_as_cs NOT NULL,
-  `laboratorio` varchar(45) COLLATE utf8mb4_vi_0900_as_cs NOT NULL,
+  `nome` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
+  `email` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
+  `tel` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
+  `laboratorio` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
   `data_reserva` date NOT NULL,
   `horario_inicio` time NOT NULL,
-  `horario_fim` varchar(45) COLLATE utf8mb4_vi_0900_as_cs NOT NULL,
+  `horario_fim` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vi_0900_as_cs;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
